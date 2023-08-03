@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        DOMAIN=${env.$DOMAIN}
+        DOMAIN=${vars.$DOMAIN}
         PRJ="hello-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
         APP='nodeapp'
     }
